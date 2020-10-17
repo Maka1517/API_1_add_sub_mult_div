@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from api_v1.views import json_echo_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('echo/', json_echo_view)
 ]
